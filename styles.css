@@ -1,0 +1,104 @@
+/* ── Theme Colors ── */
+:root {
+  /* Primary brand color – change this to re‑theme */
+  --color-primary: #569cd6;
+  /* Complementary / accent */
+  --color-primary-dark: #4a7ab4;
+  --color-primary-light: #e1ecf6;
+
+  /* Neutral UI colors */
+  --color-bg: #fafafa;
+  --color-surface: #ffffff;
+  --color-text: #222222;
+  --color-muted: #666666;
+  --color-error: #dc3545;
+}
+
+/* ── Layout ── */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--color-bg);
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* ── Card ── */
+.login-card {
+  background: var(--color-surface);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+}
+
+/* ── Typography ── */
+.logo {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary);
+}
+
+/* ── Form fields ── */
+.field {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+.field label {
+  display: block;
+  font-size: .875rem;
+  color: var(--color-muted);
+  margin-bottom: .25rem;
+}
+.field input {
+  width: 100%;
+  padding: .5rem .75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: var(--color-text);
+  background: #fff;
+}
+
+/* ── Button ── */
+.btn-primary {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: .6rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background .2s;
+}
+.btn-primary:hover {
+  background: var(--color-primary-dark);
+}
+
+/* ── Feedback links ── */
+.feedback {
+  margin-top: 1rem;
+  font-size: .875rem;
+  color: var(--color-muted);
+}
+.feedback a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.feedback a:hover {
+  text-decoration: underline;
+}
+
+/* ── Error state (optional) ── */
+.form-error input {
+  border-color: var(--color-error);
+}
